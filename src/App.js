@@ -6,13 +6,6 @@ import MovieCard from "./MovieCard.jsx";
 
 const API_URL = "http://www.omdbapi.com?apikey=aac73d5e";
 
-// const movie = {
-//         "Title": "The Shawshank Redemption",
-//         "Year": "1994",
-//         "imdbID": "tt0111161",
-//         "Type": "movie",
-//         "Poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-//     }
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -26,7 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Breaking Bad");
+    searchMovies("Avatar");
   }, []);
 
   return (
